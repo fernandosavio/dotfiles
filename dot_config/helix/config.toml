@@ -1,0 +1,41 @@
+theme = "dracula_at_night"
+
+[editor]
+bufferline = "always"
+color-modes = true
+default-line-ending = "lf"
+insert-final-newline = true
+true-color = true
+cursorline = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+# auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+# display-inlay-hints = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+separator = "┊"
+
+left = ["mode", "spinner", "file-name", "read-only-indicator"]
+center = ["version-control", "file-modification-indicator"]
+right = ["diagnostics", "selections", "register", "position", "primary-selection-length", "file-encoding"]
+
+[keys.normal]
+A-x = "extend_to_line_bounds"
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.select]
+A-x = "extend_to_line_bounds"
+X = ["extend_line_up", "extend_to_line_bounds"]
+
